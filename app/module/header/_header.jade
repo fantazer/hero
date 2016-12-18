@@ -15,23 +15,24 @@ mixin header()
 								a(href="#").nav__menu-el #{val}
 					.nav__toggle
 						+icon("menu","icons")
-		.slider.owl-carousel
-			- for (var i = 0; i < 4; i++)
-				.slider-el
-					.slider-el__wraper
-						.slider-img
-							img(src="img/phone.png", alt="")
-						.slider-info
-							.slider-info__title Flat  Modern transparent #{i+1}
-							.slider-info__text flat inspired UI with some modern transparent Element
-							.slider-info__item
-								.slider-info__list
-									span
-									.slider-info__list-text 16Psd Files Easy to Edite
-								.slider-info__list
-									span
-									.slider-info__list-text All Font used Link Included
-							.slider-info__price Get Now Your Copy just for 
-								span 7$
+		.slider-block
+			.slider.owl-carousel
+				- for (var i = 0; i < 2; i++)
+					.slider-el
+						.slider-el__wraper
+							.slider-img
+								img(src="img/phone.png", alt="")
+							.slider-info
+								.slider-info__title Flat  Modern transparent #{i+1}
+								.slider-info__text flat inspired UI with some modern transparent Element
+								.slider-info__item
+									.slider-info__list
+										span
+										.slider-info__list-text 16Psd Files Easy to Edite
+									.slider-info__list
+										span
+										.slider-info__list-text All Font used Link Included
+								.slider-info__price Get Now Your Copy just for 
+									span 7$
 
 	//block header end

@@ -15,13 +15,12 @@ $(document).ready(function(){
 		$('body').prepend('<div class="old-browser"><div class="old-browser-text"> Браузер не поддерживается =(</div></div>');
 	}
 
-	//for init SVG 
-	svg4everybody();
+	
 
 	$(".slider").owlCarousel({
 	 items : 1,
 	 dots: true,
-	 autoplay : true,
+	 autoplay : false,
 	 singleItem:true,
 	 nav:true,
 	 loop:true,
@@ -96,7 +95,8 @@ $(document).ready(function(){
 		}
 	});*/
 
-	
+	//for init SVG 
+	svg4everybody();
 })
 
 //cash SVG
