@@ -1,0 +1,81 @@
+//! block about
+.about 
+	+below(978px)
+		padding 40px 0
+		p
+			+below(640px)
+				text-align center
+			font-size 18px
+			margin 10px 0
+	padding 160px 0
+	background #f2f2f2
+//.main-cont 
+.about-wraper 
+	flex(between)
+	fw()
+	align-items flex-start
+.about-info
+	+below(640px) 
+		width 100%
+		order 2
+		flex(mid)
+		fl()
+		fw()
+	width 50%
+	order 1
+.about-title 
+	+below(978px)
+		font-size 26px
+	+below(640px)
+		text-align center
+	color #444e5d
+	font-size 45px
+	font-weight 700
+.about-list 
+	+below(978px)
+		margin 30px 0
+	margin 135px 0 80px 0
+.about-list__el 
+	+below(978px)
+		margin-bottom 15px
+		font-size 18px
+	flex(mid)
+	justify-content flex-start
+	margin-bottom 35px
+.about-list__icon 
+	.icons
+		+below(978px)
+			size 20
+		size 34
+		fill green
+		margin-right 15px
+//.icons 
+//.about-list__text 
+.about-get 
+	+below(978px)
+		font-size 22px
+		margin-bottom 30px
+	+below(640px)
+		text-align center
+	font-size 45px
+	margin-bottom 40px
+	span
+		font-weight bold
+.about-btn
+	@extend .btn 
+	@extend .btn--green 
+.about-img 
+	+below(978px)
+		flex(mid)
+	+below(640px)
+		width 100%
+		order 1
+		margin-bottom 20px
+	order 2
+	img
+		+below(978px)
+			max-width 200px
+			margin-left inherit 
+		margin-left auto 
+	width 45%
+//!block about end

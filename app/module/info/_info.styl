@@ -1,0 +1,78 @@
+//! block info
+.info 
+	+below(978px)
+		padding 40px 0
+	padding 200px 0
+//.main-cont 
+//.info-wraper 
+.info__el 
+	flex(between)
+	fw()
+	align-items flex-start
+	&:nth-child(1)
+		+below(978px)
+			padding-bottom 40px
+		padding-bottom 180px
+	&:nth-child(2)
+		.info__btn 
+			@extend .btn--green
+		.info__title-sub 
+			@extend .type--green
+.info__img 
+	+below(768px)
+		width 100%
+		flex(mid)
+		margin-bottom 20px
+		img
+			width 60%
+	width 50%
+.info__text 
+	+below(768px)
+		width 100%
+		flex(mid)
+		fl()
+		fw()
+	width 45%
+	p
+		+below(978px)
+			font-size 18px
+		+below(768px)
+			text-align center
+			margin-bottom 10px
+		margin-bottom 30px
+.info__title 
+	+below(978px)
+		font-size 28px
+		margin-bottom 15px
+	+below(768px)
+		font-size 24px
+		text-align center
+	color #444e5d
+	font-family Gotham
+	font-size 38px
+	font-weight 700
+	margin-bottom 40px
+.info__title-sub 
+	+below(768px)
+		margin-bottom 0
+		text-align center
+	@extend .type--main
+	@extend .type--red
+	margin-bottom 20px
+.info__btn 
+	@extend .btn
+	@extend .btn--red
+.divider
+	+below(768px)
+		height 40px
+	height 80px
+	background dark 
+.info__text--invert
+	+below(768px)
+		order 2
+	order 1
+.info__img--invert
+	+below(768px)
+		order 1
+	order 2
+//!block info end

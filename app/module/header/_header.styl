@@ -1,0 +1,157 @@
+//! block header
+.header 
+	bgi('image-bg.png')
+	flex(mid)
+	height 100vh
+	position relative
+	background-size cover
+	background-position center center
+.header__filter 
+	width 100%
+	height 100%
+	position absolute
+	top 0
+	left 0
+	background #353c47 
+	opacity .95
+.nav-wraper 
+	position absolute
+	width 100%
+	left 0
+	top 0
+	z-index 3000
+//.main-cont 
+.nav 
+	+below(768px)
+		padding 3% 0
+	flex(between)
+	padding-top 3%
+.nav__logo 
+	+below(1200px)
+		width 20%
+	width 30%
+.nav__menu 
+	+below(1200px)
+		width 75%
+	+above(768px)
+		display block!important
+	+below(768px)
+		display none
+	width 60%
+.nav__menu-wraper
+	flex(between)
+	+below(768px)
+		fw()
+		background #23282f 
+		position absolute
+		top 100%
+		width 100%
+		left 0px
+.nav__menu-el--active
+	background red
+	color white
+.nav__menu-el 
+	+below(1280px)
+		font-size 16px
+	+below(978px)
+		font-size 12px
+	+below(768px)
+		font-size 14px
+		width 100%
+		margin-right 0
+		text-align center
+		border-radius 0px
+	up()
+	border-radius 30px
+	margin-right 5px
+	transition .4s background
+	color white
+	padding 10px 20px
+	font-family Arial
+	font-size 22px
+	font-weight 400
+	&:hover
+		@extend .nav__menu-el--active
+
+.slider 
+	z-index 1000
+	height 100%
+	.owl-item
+		height 100%!important
+	.owl-stage-outer
+		height 100%!important
+	.owl-stage
+		height 100%!important
+.slider-el
+	flex(mid)
+	height 100%
+.slider-el__wraper
+	+below(978px)
+		width 80%
+	+below(768px)
+		fl()
+		fw()
+	flex(between)
+	width 70%
+.slider-img 
+	+below(768px)
+		width 100%
+		flex(mid)
+	width 30%
+	img
+		+below(768px)
+			max-width 150px
+		max-width 300px
+.slider-info 
+	+below(768px)
+		width 100%
+		text-align center
+	width 60%
+.slider-info__title 
+	+below(978px)
+		font-size 32px
+	+below(768px)
+		display none
+	color white
+	font-size 45px
+	margin-bottom 2%
+	font-weight 300
+.slider-info__text
+	+below(768px)
+		display none
+	font-size 26px
+	color white
+	margin-bottom 8%
+.slider-info__list
+	+below(768px)
+		display none 
+	f()
+	color white
+	align-items center
+	margin-bottom 3%
+	span
+		round() 
+		size 20
+		background red
+		border 3px solid #244c64
+		margin-right 10px
+.slider-info__price 
+	+below(1200px)
+		font-size 26px
+	+below(978px)
+		font-size 22px
+	font-size 38px
+	color white
+	span
+		color green
+		font-weight 700
+.slider-info__item
+		margin-bottom 8%
+.nav__toggle
+	+above(768px)
+		display none
+	.icons
+		size 20
+		fill white
+	cp()
+//!block header end

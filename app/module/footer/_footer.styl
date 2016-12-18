@@ -1,0 +1,39 @@
+//! block footer
+.footer 
+	background #2a3039
+	padding 30px 0 
+//.main-cont 
+.footer-wraper
+	+below(640px)
+		flex(mid)
+	flex(between) 
+	fw()
+.footer-col 
+	+below(640px)
+		width 100%
+	width 45%
+	&:nth-child(1)
+		+below(640px)
+			flex(mid)
+			margin-bottom 10px
+	span
+		font-size 16px
+		color white
+.footer-col__icon 
+	round()
+	flex(mid)
+	size 25px 25px
+	border 1px solid #647182
+	margin-right 10px
+	.icons
+		size 15 15
+		fill #647182 
+.footer-col--icons
+	flex(mid)
+	justify-content flex-start
+.footer-col--auth
+	+below(640px)
+		text-align center
+	text-align right
+		
+//!block footer end

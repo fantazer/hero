@@ -1,0 +1,17 @@
+{
+	"block":{
+		"header":"header",
+		"info":"info",
+		"review":"review",
+		"about":"about",
+		"clients":"clients",
+		"price":"price",
+		"works":"works",
+		"slider-review":"slider-review",
+		"get":"get",
+		"footer":"footer"
+	},
+	"page":{
+		"index":"index"
+	}
+}

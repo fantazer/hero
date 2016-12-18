@@ -1,0 +1,25 @@
+mixin price()
+	//block price
+	.price
+		.main-cont
+			.price-wraper
+				.price-title Pricing Table
+				.price-title-sub Choose From Our Amazing Plans
+				.price-table
+					- var arr =['Small','Medium','Large']; 
+					- each val in arr 
+						.price-table__el
+							.price-table__head
+								.price-table__title #{val}
+								.price-table__price 19$/Month
+							.price-table__cont
+								.price-table__inf 10,000 messages
+								.price-table__inf 
+									span Unlimited 
+									| data
+								.price-table__inf
+									span Unlimited 
+									| users
+								.price-table__inf first 30 days free
+								a(href="#").price-table__btn Sign up
+	//block price end

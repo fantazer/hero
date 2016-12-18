@@ -1,0 +1,25 @@
+mixin about()
+	//block about
+	.about
+		.main-cont
+			.about-wraper
+				.about-info
+					.about-title Flat and Modern transparent 
+					p flat inspired UI with some modern transparent Element
+					p En se reveillant un matin apres des reves agites, Gregor Samsa se retrouva, dans son lit, metamorphose en un monstrueux insecte. 
+					.about-list
+						- for (var i = 0; i < 4; i++)
+							.about-list__el
+								.about-list__icon
+									+icon("check","icons")
+								.about-list__text 16Psd Files Easy to Edite
+					.about-get Get Now Your 
+						span Copy 
+						| just for 
+						span 7$
+					a(href="#").about-btn Download Now
+
+				.about-img
+					img(src="img/phone-2.png", alt="")
+
+	//block about end

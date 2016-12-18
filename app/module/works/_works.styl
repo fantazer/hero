@@ -1,0 +1,106 @@
+//! block works
+.work 
+	+below(978px)
+		padding 40px 0
+	padding 60px 0 140px 0
+//.main-cont 
+//.work-wraper 
+.work-title 
+	+below(978px)
+		font-size 22px
+	text-align center
+	font-size 38px
+	font-weight 700
+	margin-bottom 20px 
+.work-nav 
+	+below(978px)
+		margin-bottom 20px
+		padding-bottom 20px
+	flex(mid)
+	margin-top 20px
+	margin-bottom 60px
+	padding-bottom 40px
+	border-bottom 1px solid #d0d0d0
+	justify-content flex-end
+.work-nav__el 
+	&:nth-child(1)
+		margin-right 20px
+	cp()
+	.icons 
+		tr(all)
+		size 15 23
+		fill #a8a7a7
+		&:hover
+			fill red
+//.work-cont 
+.work-cont__slide 
+	flex(between)
+	fw()
+.work-cont__el 
+	+below(978px)
+		width 49%
+		height 300px
+	+below(640px)
+		width 100%
+		h220
+	cp()
+	position relative
+	width 32.5%
+	height 390px
+	margin-bottom 1%
+	background-size cover
+	background-position center center
+	background-repeat no-repeat
+	overflow hidden
+	&:hover
+		.work-cont__el-filter 
+			transform translateY(0%)
+.work-cont__el-filter 
+	tr(all)
+	position absolute
+	top 0
+	left 0
+	width 100%
+	height 100%
+	background rgba(255, 75, 90, 0.79)
+	padding 20px 
+	transform translateY(-100%)
+.work-cont__el-info 
+	flex(mid)
+	fl()
+	justify-content flex-start
+	border 2px solid white
+	height 100%
+	padding 30px
+	color white
+.work-cont__el-title
+	+below(978px)
+		font-size 16px
+	font-weight 700
+	font-size 22px
+	margin-bottom 10px
+	text-align center 
+.work-cont__el-text
+	+below(978px) 
+		font-size 14px
+	font-weight 300 
+	font-size 22px
+	text-align center
+.work-cont__el-icon 
+	+below(978px)
+		size 60
+	round()
+	size 120 120
+	background white 
+	margin-top 15%
+	flex(mid)
+	.icons
+		+below(978px)
+			size 20 20
+		size 40 40
+.divider-light
+	+below(978px)
+		height 60px
+	height 170px
+	background #f1f1f1 
+//!block works end

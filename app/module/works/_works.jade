@@ -1,0 +1,24 @@
+mixin works()
+	//block works
+	.work
+		.main-cont
+			.work-wraper
+				.work-title Our Works
+				.work-nav
+					.work-nav__el.work-nav__el--back
+						+icon("back","icons")
+					.work-nav__el.work-nav__el--next
+						+icon("next","icons")
+				.work-cont.owl-carousel
+					- for (var j = 0; j < 2; j++)
+						.work-cont__slide
+							- for (var i = 0; i < 9; i++)
+								.work-cont__el(style="background-image:url(img/item-#{i+1}.png)")
+									.work-cont__el-filter
+										.work-cont__el-info
+											.work-cont__el-title One morning, when Gregor 
+											.work-cont__el-text Samsa woke from troubled in 
+											.work-cont__el-icon
+												+icon("link","icons")
+	.divider-light
+	//block works end

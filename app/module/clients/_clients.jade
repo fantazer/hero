@@ -1,0 +1,13 @@
+mixin clients()
+	//block clients
+	.clients
+		.main-cont
+			.clients-wraper
+				.clients-title Our Clients
+				.clients-title-sub Voyez ce jeu exquis wallon
+				.clients-cont
+					- for (var i = 0; i < 5; i++)
+						.clients-el
+							img(src="img/partner-#{i+1}.png", alt="")
+
+	//block clients end

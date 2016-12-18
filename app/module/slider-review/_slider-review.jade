@@ -1,0 +1,17 @@
+mixin slider-review()
+	//block slider-review
+	.slider-review
+		.slider-review-filter
+		.main-cont
+			.slider-review__cont.owl-carousel
+				- for (var i = 0; i < 5; i++)
+					.slider-review__el
+						.slider-review__icon
+							+icon("twitter","icons")
+						.slider-review__title
+							img(src="img/Logo.png", alt="")
+							span On Twitter @Uihero #{i+1}
+						.slider-review__text “A designer knows he has achieved perfection not when there is nothing left to add, but when there is nothing left to take away.”
+						.slider-review__auth  Antoine de Saint-Exupéry
+
+	//block slider-review end
